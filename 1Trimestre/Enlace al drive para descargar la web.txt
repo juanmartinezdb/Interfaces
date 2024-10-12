@@ -1,0 +1,12 @@
+https://drive.google.com/file/d/1nF4vVtji9cX_nY7kA049ByYI17ixQ-RZ/view?usp=sharing
+
+He tenido que hacerlo así porque me limitaba a 1 MB la Moodle y pesaba algo más. 
+
+Está sin CSS, los footer de abajo y como se alinee después el texto en el header y demás
+voy a tratar de solucionarlo ya cuando nos pongamos con CSS, tiene solo un poco para cuadrar
+los carruseles, es decir, que el formato lo tiene entero dado solo con Boostrap, salvo un par de cosas
+ porque se descuadraba demasiado.
+
+Los enlaces internos son Index, que es la landing page, el Contacto, y el Sobre nosotros, el resto de links
+que se prevee que tenga la página los he dejado con href="#" vacíos, en vista a rellenarlos mas adelante si
+constinuamos trabajando con ella. 
