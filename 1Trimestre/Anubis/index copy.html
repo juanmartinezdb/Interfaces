@@ -1,0 +1,335 @@
+/* Archivo HTML */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oval+Egyptian&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Athena+Unicode&display=swap">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubis Market</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/fabico.png">
+    <link rel="stylesheet" href="./estilos.css">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f3efe0;
+            color: #333;
+        }
+        header {
+            background-color: #2b2b2b;
+            color: #d4af37;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .barra-promos {
+            background-color: #4a4a4a;
+            color: #d4af37;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .barra-promos p {
+            margin: 0;
+        }
+        .cerrar-barra {
+            cursor: pointer;
+            margin-right: 20px;
+            font-size: 1.5em;
+            color: #d4af37;
+        }
+        .encabezado-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px; /* Deja espacio para la barra de promociones */
+        }
+        #logo img {
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .barra-navegacion ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+        .barra-navegacion li {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .barra-navegacion li:hover {
+            color: #d4af37;
+        }
+        .barra-navegacion a {
+            text-decoration: none;
+            color: #d4af37;
+        }
+        .barra-navegacion a:hover {
+            color: #b59e2c;
+        }
+        .portada-deslizante {
+            margin: 30px auto;
+            text-align: center;
+            max-width: 100%;
+            border: 2px solid #d4af37;
+            background-color: #fff;
+            position: relative;
+        }
+        .colecciones {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+        .coleccion-deslizante {
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #d4af37;
+            padding: 15px;
+            position: relative;
+            max-width: 100%;
+        }
+        .flecha {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #333;
+        }
+        .flecha-izquierda {
+            left: 10px;
+        }
+        .flecha-derecha {
+            right: 10px;
+        }
+        .secciones-destacadas {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+        .destacado {
+            text-align: center;
+            width: 20%;
+        }
+        .destacado img {
+            width: 80%;
+            border: 2px solid #d4af37;
+            border-radius: 10%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .destacado img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #2b2b2b;
+            color: #d4af37;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .footer-superior {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d4af37;
+        }
+        .columna-footer h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-family: 'New Athena Unicode', serif;
+        }
+        .columna-footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .columna-footer li {
+            margin: 5px 0;
+        }
+        .columna-footer a {
+            text-decoration: none;
+            color: #d4af37;
+        }
+        .columna-footer a:hover {
+            color: #b59e2c;
+        }
+        .footer-inferior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .footer-inferior p {
+            margin: 0;
+        }
+        .footer-inferior #footer-logo {
+            width: 50px;
+        }
+        .iconos-sociales {
+            display: flex;
+            margin-top: 10px;
+        }
+        .iconos-sociales img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        .iconos-encabezado {
+            display: flex;
+            align-items: center;
+        }
+        .iconos-encabezado img {
+            width: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-promos">
+        <p>Barra de Ofertas y promociones (clickable)</p>
+        <span class="cerrar-barra">&times;</span>
+    </div>
+    <header>
+        <div class="encabezado-superior">
+            <figure id="logo">
+                <img src="./imagenes/logo.png" alt="logo Anubis Market" width="50">
+            </figure>
+            <h1 style="font-family: 'Oval Egyptian', serif;">ANUBIS MARKET</h1>
+            <div class="iconos-encabezado">
+                <img src="./imagenes/usuario.png" alt="Usuario" title="Usuario">
+                <img src="./imagenes/favoritos.png" alt="Favoritos" title="Favoritos">
+                <img src="./imagenes/cesta.png" alt="Carrito" title="Carrito">
+                <img src="./imagenes/citaentienda.png" alt="Tienda más cercana" title="Tienda más cercana">
+            </div>
+        </div>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="#escarabajos">Escarabajos</a></li>
+                <li><a href="#ankhs">Ankhs</a></li>
+                <li><a href="#amuletos">Amuletos</a></li>
+                <li><a href="#brazaletes">Brazaletes</a></li>
+                <li><a href="#estatuillas">Estatuillas</a></li>
+                <li><a href="#colecciones">Colecciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slide de productos destacados -->
+        <section class="portada-deslizante">
+            <div class="slider">
+                <p>Imagen de portada con productos destacados deslizables</p>
+                <span class="flecha flecha-izquierda">&lt;</span>
+                <span class="flecha flecha-derecha">&gt;</span>
+            </div>
+        </section>
+
+        <!-- Colecciones destacadas -->
+        <section class="colecciones">
+            <div class="coleccion">
+                <p>Colección Horus</p>
+                <div class="coleccion-deslizante">
+                    <span class="flecha flecha-izquierda">&lt;</span>
+                    <span>Imagen 1 2 3 4</span>
+                    <span class="flecha flecha-derecha">&gt;</span>
+                </div>
+            </div>
+            <div class="coleccion">
+                <p>Colección Tesoros de los Faraones</p>
+                <div class="coleccion-deslizante">
+                    <span class="flecha flecha-izquierda">&lt;</span>
+                    <span>Imagen 1 2 3 4</span>
+                    <span class="flecha flecha-derecha">&gt;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cuadros destacados con las cuatro secciones más importantes -->
+        <section class="secciones-destacadas">
+            <div class="destacado">
+                <img src="./imagenes/envios.png" alt="Enviós y devoluciones">
+                <a href="#">Enviós y devoluciones</a>
+            </div>
+            <div class="destacado">
+                <img src="./imagenes/asesor.png" alt="Asesores personalizados">
+                <a href="#">Asesores personalizados</a>
+            </div>
+            <div class="destacado">
+                <img src="./imagenes/coleccionpermanente.png" alt="Colección permanente">
+                <a href="#">Colección permanente</a>
+            </div>
+            <div class="destacado">
+                <img src="./imagenes/citaentienda.png" alt="Cita en tienda">
+                <a href="#">Cita en tienda</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Capa superior del footer con tres menús horizontales -->
+        <div class="footer-superior">
+            <div class="columna-footer">
+                <h2>Atención al Cliente</h2>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                    <li><a href="#politica-devoluciones">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="#asesoramiento">Asesoramiento personalizado</a></li>
+                    <li><a href="#envios">Envíos internacionales</a></li>
+                    <li><a href="#cita">Cita en tienda</a></li>
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h2>Sobre nosotros</h2>
+                <ul>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#mision-vision">Misión y visión</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Capa inferior del footer con logo y redes sociales -->
+        <div class="footer-inferior">
+            <p>Anubis Market 2024. Ubicación España</p>
+            <img id="footer-logo" src="./imagenes/logo.png" alt="Logo Anubis Market">
+            <div class="iconos-sociales">
+                <img src="./imagenes/facebook.png" alt="Facebook" title="Facebook">
+                <img src="./imagenes/instagram.png" alt="Instagram" title="Instagram">
+                <img src="./imagenes/twitter.png" alt="Twitter" title="Twitter">
+                <img src="./imagenes/youtube.png" alt="YouTube" title="YouTube">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cerrar la barra de promociones
+        document.querySelector('.cerrar-barra').addEventListener('click', function() {
+            document.querySelector('.barra-promos').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
