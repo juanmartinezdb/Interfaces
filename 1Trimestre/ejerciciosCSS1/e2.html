@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .uno {
+                background-color: rgb(190, 190, 190);
+                border: 1px solid red;
+                width: 19%;
+        }
+        p {
+            width: 30%;
+            border:  1px dashed green ;
+        }
+        #dos {
+            border:  1px dashed black ;
+            width: 30%;
+            margin-left: auto;
+        }
+        #tres span {
+            background-color: rgb(109, 109, 109);
+            color: white;
+            margin: 3px;
+           border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> El modelo e cajas en CSS</h1>
+    <hr>
+    <h2>Un Div especial</h2>
+    <div class="uno"> Este es un bloque DIV con algunas propiedades especiales
+        como el color de fondo (background-color) la anchura(width),
+        el borde (border).
+    </div>
+    <hr>
+    <h2> Un párrafo especial</h2>
+    <p>Esto es un párrafo o p con algunas propiedades especialescomo el color de fondo (background-color)
+        , la altura (width), el borde (border)
+    </p>
+    <hr>
+    <h2>Otro div especial</h2>
+    <div id="dos"> 
+        Diferencias entre el span y el DIV: no se comportan igual, el DIV por defecto
+        ocupa TODA la linea y provoca que el siguietne contenido salte debajo. El span no:
+    </div>
+    <hr>
+    <h2>Unos spanes</h2>
+    <div id="tres">
+        <span>Esto es un span</span>
+        <span>Esto es otro span</span>
+        <span>Este es el último span</span>
+    </div>
+
+</body>
+</html>

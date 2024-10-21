@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            color: brown;
+        }
+        hr {
+            color: brown;
+        }
+        input, textarea, button{
+            border: 1px dashed brown;
+            
+        }
+
+        button {
+            color: green;
+            background-color: white;
+        }
+        fieldset {
+            border: 4px dashed brown;
+        }
+        .exterior {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+        }
+        .interior {
+            display: flex;
+            flex-direction: column;            
+        }
+        form {
+            display: inline-flex;
+        }
+        label {
+            display:  inline-block;
+            width: 100px;
+        }
+        textarea {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1> Estilos CSS para formularios</h1>
+    <hr>
+    <form>
+        <fieldset>
+        <div>
+            <label> Login:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password">
+        </div>
+        <div>
+            <label>Descripción </label>
+            <textarea >Contenido inicial... </textarea>
+        </div>
+        <div class="exterior">
+            <label>Posesiones: </label>
+            <div class="interior">
+                <div>
+                    <input type="checkbox" value="casa" >
+                    <label for="casa">Casa</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="ordenador"> 
+                    <label for="ordenador">Ordenador</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="coche">
+                    <label for="coche">Coche</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="moto">
+                    <label for="moto">Moto</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="bicicleta">
+                    <label for="bicicleta">Bicicleta</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="exterior">
+            <label>SEXO:</label>
+            <div class="interior">
+                <div>
+                    <input type="radio" value="hombre">
+                    <label for="hombre">Hombre</label>
+                </div>
+                <div>
+                    <input type="radio" value="Mujer">
+                    <label for="mujer">Mujer</label>  
+                </div>
+
+
+            </div>
+        </div>
+        <button type="submit"> Enviar</button>
+        <button type="reset">Vaciar</button>
+    </fieldset>
+
+    </form>
+</body>
+
+</html>
