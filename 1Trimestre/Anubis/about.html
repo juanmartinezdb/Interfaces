@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./imagenes/fabico.png">
     <!-- ¡¡¡ENLACES DEL BOOTSTRAP!!! NO TOCAR! -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formato.css" >
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -19,20 +20,23 @@
         <figure>
             <a href="./index.html"><img src="./imagenes/logo.png" alt="logo Anubis Market" width="150"></a>
         </figure>
+        <!-- Titulo del encabezado -->
+        <h1 id="nombretienda">ANUBIS MARKET</h1>
+
         <!-- barra de navegacion con iconos arriba -->
-         <!--https://getbootstrap.com/docs/4.0/components/navbar/ BOOTSTRAP EL MISMO SITIO QUE LA DE DROPDOWNS ARRIBA -->
-          <!-- navbar para el menu y cada enlace nav-link -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- BOOTSTRAP EL MISMO SITIO QUE LA DE DROPDOWNS ARRIBA -->
+        <!-- navbar para el menu y cada enlace nav-link -->
+        <nav class="navbar navbar-expand-lg navarriba">
             <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="#"><img src="./imagenes/usuario.png" alt="Usuario" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/favoritos.png" alt="Favoritos" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/home.png" alt="tienda" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/cesta.png" alt="Carrito" width="50"></a>
+                <a class="nav-link efecto" href="#"><img src="./imagenes/usuario.png" alt="Usuario" width="50"></a>
+                <a class="nav-link efecto" href="#"><img src="./imagenes/favoritos.png" alt="Favoritos" width="50"></a>
+                <a class="nav-link efecto" href="#"><img src="./imagenes/home.png" alt="tienda" width="50"></a>
+                <a class="nav-link efecto" href="#"><img src="./imagenes/cesta.png" alt="Carrito" width="50"></a>
             </div>
         </nav>
-        <!-- Titulo del encabezado -->
-        <h1>ANUBIS MARKET</h1>
+
     </header>
+
 
     <section class="container mt-5">
         <h2>Sobre Nosotros</h2>
@@ -50,68 +54,83 @@
 
         <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
     </section>
-
     <!-- cuadros destacados con las cuatro secciones mas importantes -->
     <!-- envios y devoluciones -->
-    <div>
-        <div><img src="./imagenes/envios.png" alt="Imagen de envíos y devoluciones" width="400"> </div>
-        <a href="">Más información sobre envíos y devoluciones</a>
-    </div>
-    <!-- Asesores  -->
-    <div>
-        <div><img src="./imagenes/asesor.png" alt="Imagen de asesores" width="400"> </div>
-        <a href="">Contacta con nuestros asesores</a>
-    </div>
-    <!-- Coleccion Permanente -->
-    <div>
-        <div><img src="./imagenes/coleccionpermanente.png" alt="Imagen de colección permanente" width="400"> </div>
-        <a href="">Ver colección permanente</a>
-    </div>
-    <!-- Cita en tienda -->
-    <div>
-        <div><img src="./imagenes/citaentienda.png" alt="Imagen de cita en tienda" width="400"> </div>
-        <a href="">Solicitar una cita en tienda</a>
-    </div>
-
+    <section class="cuatroSecciones">
+        <div class="text-center efecto" >
+            <div class="icuatro"><img src="./imagenes/envios.png" alt="Imagen de envíos y devoluciones" width="400">
+            </div>
+            <a class="cuatrolink" href="">Más información sobre envíos y devoluciones</a>
+        </div>
+        <!-- Asesores  -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/asesor.png" alt="Imagen de asesores" width="400"> </div>
+            <a class="cuatrolink" href="">Contacta con nuestros asesores</a>
+        </div>
+        <!-- Coleccion Permanente -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/coleccionpermanente.png" alt="Imagen de colección permanente"
+                    width="400"> </div>
+            <a class="cuatrolink" href="">Ver colección permanente</a>
+        </div>
+        <!-- Cita en tienda -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/citaentienda.png" alt="Imagen de cita en tienda" width="400">
+            </div>
+            <a class="cuatrolink" href="">Solicitar una cita en tienda</a>
+        </div>
+    </section>
     <footer>
         <!-- footer doble -->
         <!-- capa superior del footer con tres menus horizontales -->
         <!-- Atención al cliente -->
-        <h2>Atención al Cliente</h2>
-        <ul>
-            <li><a href="./contacta.html">Contacto</a></li>
-            <li><a href="">Preguntas Frecuentes</a></li>
-            <li><a href="">Política de Devoluciones</a></li>
-        </ul>
-        <!-- Servicios -->
-        <h2>Servicios</h2>
-        <ul>
-            <li><a href="">Envíos</a></li>
-            <li><a href="">Citas en tienda</a></li>
-            <li><a href="">Garantía de Productos</a></li>
-        </ul>
-        <!-- Sobre nosotros -->
-        <h2>Sobre Nosotros</h2>
-        <ul>
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a href="">Equipo</a></li>
-            <li><a href="">Sostenibilidad</a></li>
-        </ul>
-        <!-- footer fijo con marca, logo y redes -->
-        <p>Juan Martinez Martinez 2DAW Ies Belen</p>
-        <figure>
-            <a href="./index.html"><img src="./imagenes/logo.png" alt="logo Anubis Market" width="150"></a>
-        </figure>
-        <!-- Barra de navegacion de redes sociales solo imagenes -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="navbar-nav mx-auto">
-                <a class="nav-link" href="#"><img src="./imagenes/x.png" alt="X" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/facebook.png" alt="facebook" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/instagram.png" alt="instagram" width="50"></a>
-                <a class="nav-link" href="#"><img src="./imagenes/youtube.png" alt="youtube" width="50"></a>
+        <section class="footerArriba">
+            <div>
+                <h2>Atención al Cliente</h2>
+            <ul>
+                <li><a href="./contacta.html">Contacto</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+                <li><a href="">Política de Devoluciones</a></li>
+            </ul>
             </div>
-        </nav>
-    </footer>
+            
+            <!-- Servicios -->
+             <div>
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="">Envíos</a></li>
+                    <li><a href="">Citas en tienda</a></li>
+                    <li><a href="">Garantía de Productos</a></li>
+                </ul>
+             </div>
+           
+            <!-- Sobre nosotros -->
+             <div>
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li><a href="./about.html">Sobre nosotros</a></li>
+                <li><a href="">Equipo</a></li>
+                <li><a href="">Sostenibilidad</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="footerAbajo">
+            <!-- footer fijo con marca, logo y redes -->
+            <p>Juan Martinez Martinez 2DAW Ies Belen</p>
+            <figure class="efecto">
+                <a  href="./index.html"><img src="./imagenes/logo.png" alt="logo Anubis Market" width="150"></a>
+            </figure>
+            <!-- Barra de navegacion de redes sociales solo imagenes -->
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="navbar-nav ">
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/x.png" alt="X" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/facebook.png" alt="facebook" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/instagram.png" alt="instagram" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/youtube.png" alt="youtube" width="50"></a>
+                </div>
+            </nav>
+        </section>
+    </footer> 
 </body>
 
 </html>

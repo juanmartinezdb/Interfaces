@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #primera,
+        #segunda {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(192, 226, 153);
+        }
+
+        #primera:hover {
+            background-color: chocolate;
+            font-size: larger;
+            color: aliceblue;
+            line-height: 1.5;
+            border-radius: 10em;
+            opacity: 0.5;
+
+            padding: 1em;
+            border: 2px solid rgb(255, 0, 0);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            transition: all 1s ease;
+
+        }
+
+        #segunda:hover {
+            transform: scale(1.5) rotate(45deg) translate(10px, 20px) skew(5deg, 10deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="primera">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis, fusce viverra dictum sed justo tortor
+        consequat, dictumst cubilia habitant iaculis senectus integer nascetur
+    </div>
+    <br>
+    <div id="segunda">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis, fusce viverra dictum sed justo tortor
+        consequat, dictumst cubilia habitant iaculis senectus integer nascetur
+    </div>
+</body>
+
+</html>
