@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            display: flex;
+            margin: 0;
+        }
+        .menu {
+            width: 100px;
+            position: fixed;
+            height: 100vh;
+            background-color: #92b9bf;
+        }
+        .menu a {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contenido {
+            margin-left: 120px;
+            padding: 20px;
+        }
+
+        .seccion {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="menu">
+        <nav>
+            <a href="#seccion1">Sección 1</a>
+            <a href="#seccion2">Sección 2</a>
+            <a href="#seccion3">Sección 3</a>
+            <a href="#seccion4">Sección 4</a>
+            <a href="#seccion5">Sección 5</a>
+        </nav>
+    </aside>
+
+    <main class="contenido">
+        <section id="seccion1" class="seccion">
+            <h1>Post 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="seccion2" class="seccion">
+            <h1>Post 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="seccion3" class="seccion">
+            <h1>Post 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="seccion4" class="seccion">
+            <h1>Post 4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="seccion5" class="seccion">
+            <h1>Post 5</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <a href="#seccion1" class="volver-arriba">Volver arriba</a>
+    </main>
+</body>
+
+</html>
