@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubis Market</title>
+    <!-- meter un favicon -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/fabico.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formato.css" >
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <section class="barraOfertas">
+        <div class="ofertas"> 
+        <p>Anubis Market presenta su exclusiva colección de joyas inspiradas en la grandeza del antiguo Egipto. 
+            Piezas únicas, trabajadas con los más finos materiales, combinando oro de 24 quilates y piedras preciosas seleccionadas.
+             Redescubra el lujo y la elegancia atemporal con nuestras creaciones limitadas, diseñadas para quienes valoran la distinción 
+             y el arte. Solo por tiempo limitado, acceda a ofertas excepcionales en collares, brazaletes y anillos dignos de los faraones.</p>
+   </div>
+            </section>
+    <header>
+        <!-- Barra de ofertas que se tiene que abrir con Javascript -->
+        <figure>
+            <a href="./index.html"><img src="./imagenes/logo.png" alt="logo Anubis Market" width="150"></a>
+        </figure>
+        <!-- Titulo del encabezado -->
+        <h1 id="nombretienda">ANUBIS MARKET</h1>
+
+        <!-- barra de navegacion con iconos arriba -->
+        <!-- BOOTSTRAP EL MISMO SITIO QUE LA DE DROPDOWNS ARRIBA -->
+        <!-- navbar para el menu y cada enlace nav-link -->
+        <nav class="navbar navbar-expand navarriba">
+            <div class="navbar-nav ml-auto ">
+                <a class="nav-link efecto cajaTooltip" href="#"><img src="./imagenes/usuario.png" alt="Usuario" width="50"><span>Usuario</span></a>
+                <a class="nav-link efecto cajaTooltip" href="#"><img src="./imagenes/favoritos.png" alt="Favoritos" width="50"><span>Favoritos</span></a>
+                <a class="nav-link efecto cajaTooltip" href="#"><img src="./imagenes/home.png" alt="tienda" width="50"><span>Tienda</span></a>
+                <a class="nav-link efecto cajaTooltip" href="#"><img src="./imagenes/cesta.png" alt="Carrito" width="50"><span>Cesta</span></a>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- navegacion con los distintos apartados de productos -->
+    <!-- menu desplegable en cada uno de los productos METER BOOTSTRAP -->
+    <!-- https://getbootstrap.com/docs/4.0/components/navbar/ NAVEGACION CON BOOSTRAP! JUNTAR
+      NAVBAR CON DROPDOWNS -->
+
+    <!-- CONTENEDOR GENERAL DE LA BARA DE NAVEGACION CON TODO DENTRO -->
+    <nav class="navbar navbar-expand-lg navbar-light navproductos">
+
+        <!-- El colapse es lo que hace que boostrap despligue las barras  -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Escarabajos (marcamos el dropdown) -->
+                <li class="nav-item dropdown">
+
+                    <!-- Enlace principal Escarabajos con desplegable el dropdown -->
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown"> Escarabajos </a>
+
+                    <!-- opciones de escarabajos cad opcion es un drowdown-item -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Escarabajos Solares</a>
+                        <a class="dropdown-item" href="#">Escarabajos Alados</a>
+                        <a class="dropdown-item" href="#">Escarabajos Funerarios</a>
+                        <a class="dropdown-item" href="#">Escarabajos de la Suerte</a>
+                    </div>
+                </li>
+
+                <!-- Ankhs -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown"> Ankhs </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Ankhs Dorados</a>
+                        <a class="dropdown-item" href="#">Ankhs de Plata</a>
+                        <a class="dropdown-item" href="#">Ankhs de Bronce</a>
+                    </div>
+                </li>
+
+                <!-- Amuletos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown"> Amuletos </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Amuletos de Protección</a>
+                        <a class="dropdown-item" href="#">Amuletos de Salud</a>
+                        <a class="dropdown-item" href="#">Amuletos de Fortuna</a>
+                    </div>
+                </li>
+
+                <!-- Sección Brazaletes -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">Brazaletes</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Brazaletes de Oro</a>
+                        <a class="dropdown-item" href="#">Brazaletes de Plata</a>
+                        <a class="dropdown-item" href="#">Brazaletes con Piedras Preciosas</a>
+                    </div>
+                </li>
+
+                <!-- Estatuillas -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">Estatuillas</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Estatuillas de Dioses</a>
+                        <a class="dropdown-item" href="#">Estatuillas de Faraones</a>
+                        <a class="dropdown-item" href="#">Estatuillas de Animales</a>
+                    </div>
+                </li>
+
+                <!-- Colecciones -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown"> Colecciones </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Colección Horus</a>
+                        <a class="dropdown-item" href="#">Colección Tesoros de los Faraones</a>
+                        <a class="dropdown-item" href="#">Colección Egipto Antiguo</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slide de productos destacados -->
+    <!-- https://getbootstrap.com/docs/4.3/components/carousel/ REVISAR LA MECANICA AQUI DEL SLIDER LA IDEA ES HACER EL CARRUSEL CON INDICATORS y CAPTIONS! -->
+    <section>
+        <section id="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <!-- Carrusel de Bootstrap -->
+            <div id="productosCarrusel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores del carrusel (para pinchar si quieres ir a uno directamente) -->
+                <ol class="carousel-indicators">
+                    <li data-target="#productosCarrusel" data-slide-to="0" class="active"></li>
+                    <li data-target="#productosCarrusel" data-slide-to="1"></li>
+                    <li data-target="#productosCarrusel" data-slide-to="2"></li>
+                    <li data-target="#productosCarrusel" data-slide-to="3"></li>
+                    <li data-target="#productosCarrusel" data-slide-to="4"></li>
+                </ol>
+                <!-- Div de las imagenes -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active efecto">
+                        <img src="./imagenes/articulos/ank1.jfif" class="d-block w-100" alt="Producto destacado 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Producto destacado 1</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item efecto">
+                        <img src="./imagenes/articulos/7.jfif" class="d-block w-100" alt="Producto destacado 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Producto destacado 2</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item efecto">
+                        <img src="./imagenes/articulos/escarabajo2.jfif" class="d-block w-100"
+                            alt="Producto destacado 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Producto destacado 3</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item efecto">
+                        <img src="./imagenes/articulos/19.jfif" class="d-block w-100" alt="Producto destacado 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Producto destacado 4</h5>
+                            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item efecto">
+                        <img src="./imagenes/articulos/ank4.jfif" class="d-block w-100" alt="Producto destacado 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Producto destacado 5</h5>
+                            <p>Etiam porta sem malesuada magna mollis euismod.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- flechitas -->
+                <a class="carousel-control-prev" href="#productosCarrusel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#productosCarrusel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!-- dos cuadros con slide de colecciones destacadas -->
+    <!-- coleccion 1 y coleccion 2 en un contenedor flex -->
+    <section id="colecciones-destacadas">
+        <div id="coleccion1Carrusel" aria-labelledby="coleccion1CarouselLabel" class="carousel slide"
+            data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#coleccion1Carrusel" data-slide-to="0" class="active"></li>
+                <li data-target="#coleccion1Carrusel" data-slide-to="1"></li>
+                <li data-target="#coleccion1Carrusel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active efecto">
+                    <img src="./imagenes/articulos/faraones.jfif" class="d-block w-100" alt="Objeto 1 de colección 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 1</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item efecto">
+                    <img src="./imagenes/articulos/faraones1.jfif" class="d-block w-100" alt="Objeto 2 de colección 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 2</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item efecto">
+                    <img src="./imagenes/articulos/faraones2.jfif" class="d-block w-100" alt="Objeto 3 de colección 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 3</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#coleccion1Carrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#coleccion1Carrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="coleccion2Carrusel" aria-labelledby="coleccion2CarouselLabel" class="carousel slide"
+            data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#coleccion2Carrusel" data-slide-to="0" class="active"></li>
+                <li data-target="#coleccion2Carrusel" data-slide-to="1"></li>
+                <li data-target="#coleccion2Carrusel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active efecto">
+                    <img src="./imagenes/articulos/horus1.jpg" class="d-block w-100" alt="Objeto 1 de colección 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 1</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item efecto">
+                    <img src="./imagenes/articulos/horus2.jpg" class="d-block w-100" alt="Objeto 2 de colección 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 2</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item efecto">
+                    <img src="./imagenes/articulos/horus3.jpg" class="d-block w-100" alt="Objeto 3 de colección 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Objeto 3</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#coleccion2Carrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#coleccion2Carrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- cuadros destacados con las cuatro secciones mas importantes -->
+    <!-- envios y devoluciones -->
+    <section class="cuatroSecciones">
+        <div class="text-center efecto" >
+            <div class="icuatro"><img src="./imagenes/envios.png" alt="Imagen de envíos y devoluciones" width="400">
+            </div>
+            <a class="cuatrolink" href="">Más información sobre envíos y devoluciones</a>
+        </div>
+        <!-- Asesores  -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/asesor.png" alt="Imagen de asesores" width="400"> </div>
+            <a class="cuatrolink" href="">Contacta con nuestros asesores</a>
+        </div>
+        <!-- Coleccion Permanente -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/coleccionpermanente.png" alt="Imagen de colección permanente"
+                    width="400"> </div>
+            <a class="cuatrolink" href="">Ver colección permanente</a>
+        </div>
+        <!-- Cita en tienda -->
+        <div class="text-center efecto">
+            <div class="icuatro"><img src="./imagenes/citaentienda.png" alt="Imagen de cita en tienda" width="400">
+            </div>
+            <a class="cuatrolink" href="">Solicitar una cita en tienda</a>
+        </div>
+    </section>
+    <footer>
+        <!-- footer doble -->
+        <!-- capa superior del footer con tres menus horizontales -->
+        <!-- Atención al cliente -->
+        <section class="footerArriba">
+            <div>
+                <h2>Atención al Cliente</h2>
+            <ul>
+                <li><a href="./contacta.html">Contacto</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+                <li><a href="">Política de Devoluciones</a></li>
+            </ul>
+            </div>
+            
+            <!-- Servicios -->
+             <div>
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="">Envíos</a></li>
+                    <li><a href="">Citas en tienda</a></li>
+                    <li><a href="">Garantía de Productos</a></li>
+                </ul>
+             </div>
+           
+            <!-- Sobre nosotros -->
+             <div>
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li><a href="./about.html">Sobre nosotros</a></li>
+                <li><a href="">Equipo</a></li>
+                <li><a href="">Sostenibilidad</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="footerAbajo">
+            <!-- footer fijo con marca, logo y redes -->
+            <p>Juan Martinez Martinez 2DAW Ies Belen</p>
+            <figure class="efecto">
+                <a  href="./index.html"><img src="./imagenes/logo.png" alt="logo Anubis Market" width="150"></a>
+            </figure>
+            <!-- Barra de navegacion de redes sociales solo imagenes -->
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="navbar-nav ">
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/x.png" alt="X" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/facebook.png" alt="facebook" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/instagram.png" alt="instagram" width="50"></a>
+                    <a class="nav-link efecto" href="#"><img src="./imagenes/youtube.png" alt="youtube" width="50"></a>
+                </div>
+            </nav>
+        </section>
+    </footer> 
+</body>
+
+</html>
