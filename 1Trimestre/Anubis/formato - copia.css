@@ -1,0 +1,153 @@
+body {
+    color: rgb(214, 163, 85);
+    background: linear-gradient(90deg, #3b2b0d 0.5%, black 10%,black 90%, #3b2b0d 99% );
+}
+
+/* estrechar el carrusel */
+#productosCarrusel .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Alinear carruseles */
+#colecciones-destacadas {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+#colecciones-destacadas .carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#coleccion1Carrusel,
+#coleccion2Carrusel {
+    width: 48%;
+}
+/* oscurecer letras del carrusel para que se vea el texto */
+.carousel-caption {
+background: rgba(0, 0, 0, 0.6); 
+border-radius: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.navarriba{
+    align-items: first baseline;
+}
+
+
+#nombretienda {
+    padding-top: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(187, 139, 37);
+}
+
+.cuatroSecciones {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+
+}
+
+.cuatroSecciones div {
+    padding: 1em;
+}
+
+a {
+    color: #968b4f !important;
+}
+
+.icuatro {
+    height: 4;
+}
+
+/* IMPORTANT!!!! PARA SOBREESCRIBIR BOOTSTRAP */
+.navbar-nav .nav-link {
+    color: #FFD700 !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40 !important;
+}
+
+.navbar-nav .dropdown-item {
+    color: #FFD700 !important;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #555555 !important;
+    color: #FFFFFF !important;
+}
+
+.footerArriba{
+    display: flex;
+    justify-content: space-around;
+    padding: 10em 0;
+    flex-wrap: wrap;
+}
+.footerAbajo{
+    display: flex;
+    justify-content: space-between;
+    align-items:end
+}
+/* -----------Efectillos---------------------- */
+.efecto {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.efecto:hover {
+    transform: scale(1.05); 
+    
+}
+/* --------------------ToolTip --------*/
+
+.cajaTooltip {
+    position: relative;
+    display: inline-block;
+}
+.cajaTooltip span {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(207, 190, 152);
+    color: #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    opacity: 0;
+}
+
+.cajaTooltip:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+.barraOfertas {
+    background-color: #97753a;
+    color: white;
+    font-size: large;
+    white-space: nowrap;
+}
+
+.ofertas p {
+    animation: deslizamiento 90s linear infinite;
+}
+
+@keyframes deslizamiento {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
