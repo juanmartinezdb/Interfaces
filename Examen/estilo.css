@@ -1,0 +1,129 @@
+  :root {
+    --main-green: #136f63;
+    --dark-green: #0b3d33;
+    --background-pale: #e4f9f5;
+    --highlight-orange: #ffa726;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-pale);
+  }
+
+  header {
+    background: linear-gradient(90deg, var(--highlight-orange) 0%, var(--main-green) 100%);
+    color: var(--highlight-orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  img {
+    margin: 10px;
+    width: 30px;
+  }
+
+  section {
+/* no saco el expandirlo a todo el ancho,  */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--dark-green);
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+    background: radial-gradient(circle, var(--main-green) 0%, var(--highlight-orange) 100%);
+    color: var(--highlight-orange);
+  }
+
+  input, button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--main-green);
+  }
+
+  h1 {
+    font-weight: normal;
+    text-shadow: 6px 3px 4px var(--highlight-orange);
+  }
+
+  h3, h5, h6, p {
+    font-weight: normal;
+    margin: 3px;
+  }
+
+  /* -------------hoover---------------- */
+a:hover {
+  background-color: var(--background-pale);
+}
+input:hover, button:hover {
+  border:  2px solid var(--dark-green);
+  background-color: var(--highlight-orange);
+  border-radius: 20px;
+}
+
+/* trasformaciones */
+img:hover {
+
+  transform: rotate(360deg) ;
+  transition: ease 0.3s;
+}
+
+input:hover {
+  transform: scale(1.05);
+  transition: ease 0.2s;
+}
+
+#busqueda:hover {
+  transform: scale(1.15);
+  /* transition: ease 0.2s; */
+}
+
+
+
+
+
+  @media (max-width: 600px) {
+    ul {
+      display: none;
+    }
+
+    .hamburguesa {
+      visibility: visible;
+      display: inline;
+    }
+    .hamburguesa:hover {
+
+  }
+  
