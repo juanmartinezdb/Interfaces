@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Tailwind</title>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Barra de navegación -->
+    <div class="bg-gray-800 text-white">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold flex items-center"><img class="w-16" src="log.png"  alt="Logo Tienda"> Tienda informática</a>
+        <nav>
+          <a href="index.html" class="px-4">Inicio</a>
+          <a href="index.html" class="px-4">Acerca</a>
+          <a href="index.html" class="px-4">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  
+  <!-- grid (3 cols (tarjeta: img, titulo y descripcion)) -->
+    <main class="flex-grow">
+      <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="articulo1.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+          <img src="a1.jpg" alt="Artículo 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-lg font-bold mb-2">Tarjeta gráfica GIGABYTE GeForce RTX 3080</h2>
+            <p class="text-gray-600">Gaming OC - 10G (REV2.0), 3 ventiladores WINDFORCE, LHR, 10 GB 320 bits GDDR6X, tarjeta de vídeo GV-N3080GAMING OC - 10GD REV2.0 </p>
+          </div>
+        </a>
+        <a href="articulo2.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+          <img src="a2.jpg" alt="Artículo 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-lg font-bold mb-2">PNY NVIDIA T400</h2>
+            <p class="text-gray-600">Tarjeta Gráfica Profesional 2GB GDDR6 PCI Express 3.0 x16 Ranura Simple, 3X Mini-Puerto de Visualización, 8K Soporte, Ventilador Activo ultrasilencioso .</p>
+          </div>
+        </a>
+        <a href="articulo3.html" class="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+          <img src="a5.jpg" alt="Artículo 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-lg font-bold mb-2">QTHREE Radeon RX 550</h2>
+            <p class="text-gray-600">Tarjeta Grafica, 4GB GDDR5 128-bit, DVI-D, HDMI, DisplayPort, PCI Express x8, Tarjeta de Vídeo Gaming para PC, DirectX 12, Computer GPU </p>
+          </div>
+        </a>
+      </div>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white ">
+      <div class="container mx-5 p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <h1 class="text-2xl mb-2">Componentes</h1>
+          <ul>
+            <li><a href="#" class="hover:underline">Tarjetas Gráficas</a></li>
+            <li><a href="#" class="hover:underline">Procesadores</a></li>
+            <li><a href="#" class="hover:underline">Memoria RAM</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-2xl mb-2">Perifericos</h1>
+          <ul>
+            <li><a href="#" class="hover:underline">Teclados</a></li>
+            <li><a href="#" class="hover:underline">Ratones</a></li>
+            <li><a href="#" class="hover:underline">Keypads</a></li>
+          </ul>
+        </div>        
+        <div>
+          <h1 class="text-2xl mb-2">Otros</h1>
+          <ul>
+            <li><a href="#" class="hover:underline">Sillas Gaming</a></li>
+            <li><a href="#" class="hover:underline">Torres</a></li>
+            <li><a href="#" class="hover:underline">electrodomesticos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mx-5 flex items-center">
+        <img class="w-16" src="log.png"  alt="logo tienda">
+        <a href="log.png" class=" text-lg font-bold">Tienda informática 2024 Juan Martínez Martínez</a>
+    </div>
+    </footer>
+  
+  </body>
+  </html>

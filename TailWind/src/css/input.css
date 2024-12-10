@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.caja {
+    @apply size-40 bg-gradient-to-tr from-orange-500 to-orange-400 place-content-center rounded-full text-white font-extrabold
+    text-center border border-x-8 border-b-8 border-red-950;
+}
+.caja2 {
+    @apply size-40 bg-gradient-to-tr from-orange-500 to-orange-400 place-content-center rounded-lg text-white font-extrabold
+    text-center border border-x-8 border-b-8 border-red-950;
+}
+}

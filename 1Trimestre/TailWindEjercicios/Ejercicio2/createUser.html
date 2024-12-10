@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg- bg-no-repeat bg-[url('fondo.jpg')]">
+
+
+<div id="newUserCard" class=" sm:w-1/2 w-full mx-auto m-10 p-6 bg-white border rounded-lg shadow-md text-yellow-700">
+    <form>
+      <div class="mb-4 sm:flex gap-2">
+        <label class="w-2/5 block text-orange-700">Nombre Completo:</label>
+        <input type="text" class="sm:w-3/5  w-full px-3 py-2 border rounded focus:outline-none focus:border-2 border-yellow-500" placeholder="Nombre">
+      </div>
+
+      <div class="mb-4 sm:flex  gap-2">
+        <label class="w-2/5 block text-orange-700">Correo:</label>
+        <input type="email" class="sm:w-3/5  w-full px-3 py-2 border rounded focus:outline-none focus:border-2 border-yellow-500" placeholder="Correo">
+      </div>
+
+      <div class="mb-4 sm:flex  gap-2">
+        <label class="w-2/5 block text-orange-700">Confirmar Correo:</label>
+        <input type="email" class="sm:w-3/5  w-full px-3 py-2 border rounded focus:outline-none focus:border-2 border-yellow-500" placeholder="Correo">
+      </div>
+
+      <div class="mb-4 sm:flex  gap-2">
+        <label class="w-2/5 block text-orange-700">Contraseña:</label>
+        <input type="password" class="sm:w-3/5  w-full px-3 py-2 border rounded focus:outline-none focus:border-2 border-yellow-500" placeholder="Contraseña">
+      </div>
+      
+      <div class="mb-4 sm:flex gap-2">
+        <div class="w-2/5 mb-2">
+          <label class=" block text-orange-700">Sexo</label>
+          <div>
+            <input type="radio" name="sexo" value="masculino" id="masculino" class="mr-2">
+              <label for="masculino" class=""> Masculino</label>
+          </div>
+            <div>
+              <input type="radio" name="sexo" value="femenino" id="femenino" class="mr-2">
+              <label for="femenino" class=""> Femenino</label>
+            </div>
+            <div>
+              <input type="radio" name="sexo" value="otro" id="otro" class="mr-2">
+              <label for="otro" class=""> Otro</label>
+            </div>
+        </div>
+        <div class="sm:w-3/5 w-full">
+          <select class="w-full px-3 py-2 border text-gray-900 rounded focus:outline-none  bg-white focus:border-2 border-yellow-500">
+            <option>Instrumento</option>
+            <option>Guitarra</option>
+            <option>Piano</option>
+            <option>Violín</option>
+            <option>Saxofón</option>
+            <option>Batería</option>
+            <option>Flauta</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="mb-4 flex">
+        <label class="w-2/5 block text-orange-700">Fecha de Nacimiento:</label>
+        <input type="date" class="sm:w-3/5  w-full px-3 py-2 border rounded focus:outline-none focus:border-2 border-yellow-500">
+      </div>
+      
+      <div class="mb-4 sm:flex  gap-2">
+        <label class="w-2/5 block text-orange-700">Elija imagen:</label>
+        <input type="file" class="sm:w-3/5  w-full text-gray-900 bg-yellow-200">
+      </div>
+      
+      <div class="flex justify-center">
+        <button type="submit" class="sm:w-2/3 w-full px-4 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-400 hover:text-gray-800">Registrar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
