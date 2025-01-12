@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-300 py-4 md:px-28 px-3 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Mi Página Web</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:underline hover:font-bold cursor-pointer">Inicio</a></li>
+                <li><a href="#" class="hover:underline hover:font-bold cursor-pointer">Servicios</a></li>
+                <li><a href="#" class="hover:underline hover:font-bold cursor-pointer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Principal -->
+
+        <!-- Fontal con imagen -->
+<div class="flex-grow flex flex-col">
+    <section class="relative text-center py-20 bg-cover bg-center bg-no-repeat md:bg-[url('arcoiris.png')] bg-[url('desierto.jpg')]  text-orange-500">
+            <h2 class="text-4xl font-bold mb-4">Bienvenido a nuestra página</h2>
+            <p class="mb-6">Explora nuestros servicios y descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
+            <button class="bg-gradient-to-r from-orange-600 to-yellow-400 text-white px-6 py-3 rounded-lg text-lg hover:scale-105 hover:shadow-lg transition">Comienza ahora</button>
+    </section>
+    
+            <!-- Tarjetas -->
+            <section class="py-12 px-6 ">
+                <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-blue-200 p-6 rounded-lg hover:scale-105 hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold mb-2">Diseño Web</h3>
+                        <p>Creamos sitios web modernos y funcionales adaptados a tus necesidades.</p>
+                    </div>
+                    <div class="bg-blue-200 p-6 rounded-lg hover:scale-105 hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold mb-2">Marketing Digital</h3>
+                        <p>Te ayudamos a crecer online con estrategias efectivas y personalizadas.</p>
+                    </div>
+                    <div class="bg-blue-200 p-6 rounded-lg hover:scale-105 hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold mb-2">Consultoría</h3>
+                        <p>Obtén orientación profesional para tus proyectos tecnológicos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO -->
+            <section class="py-12 px-6">
+                <h2 class="text-3xl font-bold text-center mb-8"> Video </h2>
+                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/7BljXvdvFKk?si=sa7Zzf7LgbPKbNj_"></iframe>
+            </section>
+</div>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-600 to-purple-300 py-4 text-center">
+        <p>&copy; 2025 Ejercico 3, Juan Martínez Martínez.</p>
+    </footer>
+
+</body>
+</html>
