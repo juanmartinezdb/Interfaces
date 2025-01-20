@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="dark:bg-slate-900 dark:text-white">
+    <label for="darkmode">Modo oscuro</label>
+    <input type="checkbox" name="oscuro" id="darkmode">
+    
+</body>
+<script>
+    const darkModeInput = document.querySelector('#darkmode');
+
+    darkModeInput.addEventListener('click', ()=> {
+        document.documentElement.classList.toggle('dark');
+    })
+</script>
+</html>
